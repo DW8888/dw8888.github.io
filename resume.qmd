@@ -1,0 +1,102 @@
+---
+title: "Resume"
+---
+
+## **Darwhin Gomez**  
+**Data Engineer | Data Scientist**  
+New York, NY  
+
+📧 darwhin88@gmail.com  
+🔗 <https://linkedin.com/in/darwhin-gomez>  
+💻 <https://github.com/dw8888>  
+
+---
+
+### **SUMMARY**
+Data engineer and data scientist with a **Master of Science in Data Science and Machine Learning (GPA 4.0)** and hands-on experience designing data pipelines, analytics workflows, and ML-enabled systems. Former **AWS Solutions Architect Intern**, where I built scalable, cloud-based analytics and NLP pipelines processing **millions of records**. Strong foundation in Python, SQL, cloud services, and applied machine learning, with a focus on reproducibility, evaluation, and real-world decision-making. Seeking a junior role to contribute to production data systems while continuing to grow as an engineer.
+
+---
+
+### **EDUCATION**
+
+**City University of New York – School of Professional Studies**  
+Master of Science, Data Science and Machine Learning — *Jan 2026*  
+GPA: 4.0  
+
+**City University of New York – New York City College of Technology**  
+Bachelor of Technology, Computer Information Systems — *Jun 2024*  
+GPA: 3.78 | Dean’s List (5×) | National Honor Society  
+
+---
+
+### **CERTIFICATIONS**
+- AWS Certified Solutions Architect – Associate  
+- AWS Certified AI Practitioner – Generative AI  
+- Google Cybersecurity Certificate  
+- Google IT Support  
+
+---
+
+### **PROFESSIONAL EXPERIENCE**
+
+#### **Solutions Architect Intern** — *Amazon Web Services (AWS)*  
+Arlington, VA | Jun 2025 – Sep 2025  
+
+- Designed and evaluated **secure, scalable AWS architectures**, analyzing trade-offs across cost, performance, and operational complexity.  
+- Built end-to-end **data analytics pipelines** using **Athena, Glue, SQL, and serverless components**.  
+- Developed a fully automated **sentiment analysis pipeline** processing **millions of text records**, reducing feedback-to-action latency by approximately **5×** while maintaining full traceability.  
+- Automated a previously **100% manual QA workflow**, enabling analysts to focus on interpretation rather than processing.  
+- Applied **NLP techniques** and prompt-design strategies using foundation models via **Amazon Bedrock**.  
+- Designed and deployed **Amazon QuickSight dashboards** to monitor sentiment trends and validate insights.  
+- Presented architectural designs and cost analyses to technical and non-technical stakeholders.  
+
+---
+
+#### **Software Developer Intern** — *WOPLLI Technologies*  
+Remote, NY | Jun 2024 – Sep 2024  
+
+- Designed system and data-flow architecture diagrams aligned with **data governance and security requirements**.  
+- Integrated and tested APIs supporting decentralized identity workflows on the Ethereum network.  
+- Evaluated system behavior and edge cases to ensure correctness and reliability.  
+
+---
+
+#### **IT Instructor Assistant** — *RF CUNY & Generation USA (Choose-U)*  
+Remote, NY | Feb 2022 – Aug 2023  
+
+- Delivered **36 instructional sessions** covering IT support, Linux, PowerShell, and scripting to **200+ learners**.  
+- Tracked learner engagement using **Excel and Google Sheets**, producing summary statistics and progress reports.  
+- Used performance data to refine instruction, contributing to a **96% cohort graduation rate**.  
+
+---
+
+### **PROJECTS**
+
+#### **Alfred — Agentic Job Search Assistant** | *Sep 2025 – Present*  
+
+- Built a personal **agentic job search assistant** using **FastAPI (Python)** and OpenAI GPT models.  
+- Implemented a **Retrieval-Augmented Generation (RAG)** system using **PostgreSQL with pgvector**.  
+- Applied **cosine similarity** to match candidates to job postings, reducing application time by **~60%**.  
+- Conducted **LLM evaluation** using human-in-the-loop and LLM-as-judge techniques.  
+
+---
+
+### **TECHNICAL SKILLS**
+
+**Languages & Programming**  
+Python (pandas, scikit-learn, PyTorch), R, SQL  
+
+**Data & Analytics Tools**  
+Excel, PowerPoint, Google Sheets, Tableau, Power BI  
+
+**Cloud & Data Platforms**  
+AWS (Athena, Glue, Bedrock, QuickSight), **Databricks (familiarity)**  
+
+**AI / ML Platforms**  
+OpenAI, Claude, Llama, Google GenAI  
+
+**Techniques & Methods**  
+ETL, NLP, Classification, Regression, Ensemble Methods (CART), Forecasting (ARIMA), Anomaly Detection, Hypothesis Testing, EDA, PCA, Clustering  
+
+**Development Environments**  
+Jupyter, Colab, VS Code, Rstudio, Pycharm   

@@ -1,7 +1,35 @@
 ---
-title: "dw8888.github.io"
+title: "Darwhin Gomez"
 ---
 
-This is a Quarto website.
+## Data Engineer | Data Scientist
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a data professional with a strong foundation in data engineering, analytics, and machine learning. I recently completed a **Master of Science in Data Science**, where I worked extensively with real-world datasets, statistical modeling, and end-to-end data workflows.
+
+I have hands-on experience using **Python, SQL, and R** to build data pipelines, perform feature engineering, and develop machine learning models. My work spans academic projects and personal builds, with a focus on reproducibility, clear evaluation, and practical decision-making.
+
+I am currently seeking a **junior data engineering or data-focused role** where I can continue developing scalable data systems while contributing meaningfully to a team.
+
+---
+
+### Links
+- **LinkedIn:** <https://www.linkedin.com/in/darwhin-gomez>  
+- **GitHub:** <https://github.com/dw8888>  
+- **Resume:** [Resume](resume.qmd)
+
+
+
+---
+
+### Featured Projects
+A selection of projects demonstrating data pipelines, modeling, and applied analytics.  
+(See the **Projects** tab for full details.)
+
+- **Fraud Detection Pipeline**  
+  Imbalanced classification workflow with feature engineering, model training, and precision-focused evaluation.
+
+- **Alfred – AI Job Assistant (RAG)**  
+  FastAPI-based system using PostgreSQL/pgvector and LLMs to generate tailored resumes and cover letters.
+
+- **Bank Marketing Model Experiments**  
+  Comparative modeling using Decision Trees, Random Forests, AdaBoost, and SVMs with rigorous evaluation metrics.
