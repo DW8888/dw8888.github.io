@@ -1,35 +1,81 @@
 ---
 title: "Darwhin Gomez"
+
 ---
 
-## Data Engineer | Data Scientist
+## AI Solutions Engineer | Cloud & Data Systems
+
 
 I am a data professional with a strong foundation in data engineering, analytics, and machine learning. I recently completed a **Master of Science in Data Science**, where I worked extensively with real-world datasets, statistical modeling, and end-to-end data workflows.
 
-I have hands-on experience using **Python, SQL, and R** to build data pipelines, perform feature engineering, and develop machine learning models. My work spans academic projects and personal builds, with a focus on reproducibility, clear evaluation, and practical decision-making.
+Learn more about me through the links below, and explore my projects and certifications for examples of my work and technical expertise.
 
-I am currently seeking a **junior data engineering or data-focused role** where I can continue developing scalable data systems while contributing meaningfully to a team.
+---
+
+
+## Featured Projects
+
+A selection of projects that demonstrate my experience in data engineering, analytics, machine learning, and AI-powered systems.  
+
+
+
+### Agent0 – RAG-Grounded Analytics Agent
+
+**Agent0** is a retrieval-augmented analytics agent that converts natural language questions into safe, explainable SQL insights.
+
+The system combines a star-schema analytics warehouse with business-rule and metadata retrieval (RAG) to ensure that generated queries are grounded in approved definitions before execution. Agent0 uses an agentic workflow to decide when to retrieve context, execute SQL, or perform post-processing in Python.
+
+**Key ideas behind Agent0:**
+
+- Semantic grounding via RAG to reduce SQL hallucinations  
+- Clear separation of reasoning, retrieval, and execution  
+- OLAP-first design with a migration path to Postgres or cloud warehouses  
+- Guardrails and auditability beyond prompt-only approaches  
+
+**Tech stack:** DuckDB (prototype OLAP) → Postgres/Redshift-style warehouse, FAISS (vector retrieval), LangChain (agent orchestration), Python (analytics + SQL), LLM-agnostic (currently using GPT-4o via OpenAI API).
+
+- **Repo:** <https://github.com/DW8888/agent0>  
+- **Architecture & design:** [Agent0 details](docs/agent0.html)
+
+---
+
+### Alfred – AI Job Assistant (RAG)
+
+Alfred originated as both a practical solution to streamline my job search and as a Master’s capstone project. It is a RAG-powered job application assistant that generates tailored resumes and cover letters based on user profiles and job descriptions.
+
+**Key ideas behind Alfred:**
+
+- Uses vector databases and cosine similarity to retrieve relevant profile and job information  
+- Leverages LLMs to generate customized application materials  
+- Built with FastAPI and PostgreSQL/pgvector for efficient retrieval  
+- Includes a React/Next.js frontend with a FastAPI backend for end-to-end user interaction  
+
+**Tech stack:** FastAPI, PostgreSQL/pgvector, Python, Next.js/React (TypeScript), OpenAI-powered RAG workflows.
+
+- **Repo:** <https://github.com/DW8888/alfred>
+
+- **Design:** [Alfred flow](alfred_flow.html)
+
+---
+
+### Fraud Isolation Case Study
+
+This project was developed as part of a case study in my data science program, where I built an Isolation Forest model to detect fraudulent financial transactions.
+
+The notebook includes data preprocessing, exploratory data analysis, feature engineering, model training, and evaluation — demonstrating my ability to apply machine learning techniques to real-world problems.
+
+**Tech stack:** Python, Jupyter Notebook, scikit-learn, pandas, matplotlib, seaborn.
+
+**Notebook:**
+- [Fraud Isolation Case Study](https://github.com/DW8888/Data602/blob/main/Bank%20Transaction%20Fraud/isolationf_anomoly_detection.ipynb)
 
 ---
 
 ### Links
+- **About:** [About me](about.qmd)
 - **LinkedIn:** <https://www.linkedin.com/in/darwhin-gomez>  
 - **GitHub:** <https://github.com/dw8888>  
 - **Resume:** [Resume](resume.qmd)
-
-
+- **Certifications:** [Certifications](certifications.qmd)
 
 ---
-
-### Featured Projects
-A selection of projects demonstrating data pipelines, modeling, and applied analytics.  
-(See the **Projects** tab for full details.)
-
-- **Fraud Detection Pipeline**  
-  Imbalanced classification workflow with feature engineering, model training, and precision-focused evaluation.
-
-- **Alfred – AI Job Assistant (RAG)**  
-  FastAPI-based system using PostgreSQL/pgvector and LLMs to generate tailored resumes and cover letters.
-
-- **Bank Marketing Model Experiments**  
-  Comparative modeling using Decision Trees, Random Forests, AdaBoost, and SVMs with rigorous evaluation metrics.

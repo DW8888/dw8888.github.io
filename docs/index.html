@@ -37,16 +37,20 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f1aadacce99040138bbb613f9330654f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ed13d93a22ecb2922411716e5295eaa0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7df5fa70804cc3eb8f56955d4aa40239.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ed13d93a22ecb2922411716e5295eaa0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -73,57 +77,286 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">dw8888.github.io</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/DGlogo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./assets/DGlogo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resume.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file" role="img">
+</i> 
+ <span class="menu-text">Resume</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./certifications.html" class="sidebar-item-text sidebar-link"><i class="bi bi-award" role="img">
+</i> 
+ <span class="menu-text">Certifications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://www.linkedin.com/in/darwhin-gomez/" class="sidebar-item-text sidebar-link"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text">LinkedIn</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/DW8888" class="sidebar-item-text sidebar-link"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text">GitHub</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://rpubs.com/Darwhin88" class="sidebar-item-text sidebar-link"><i class="bi bi-r" role="img">
+</i> 
+ <span class="menu-text">RPubs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="mailto:darwhin88@gmail.com" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text">Contact</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-engineer-data-scientist" id="toc-data-engineer-data-scientist" class="nav-link active" data-scroll-target="#data-engineer-data-scientist">Data Engineer | Data Scientist</a>
+  <li><a href="#ai-solutions-engineer-cloud-data-systems" id="toc-ai-solutions-engineer-cloud-data-systems" class="nav-link active" data-scroll-target="#ai-solutions-engineer-cloud-data-systems">AI Solutions Engineer | Cloud &amp; Data Systems</a></li>
+  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link" data-scroll-target="#featured-projects">Featured Projects</a>
   <ul class="collapse">
+  <li><a href="#agent0-rag-grounded-analytics-agent" id="toc-agent0-rag-grounded-analytics-agent" class="nav-link" data-scroll-target="#agent0-rag-grounded-analytics-agent">Agent0 – RAG-Grounded Analytics Agent</a></li>
+  <li><a href="#alfred-ai-job-assistant-rag" id="toc-alfred-ai-job-assistant-rag" class="nav-link" data-scroll-target="#alfred-ai-job-assistant-rag">Alfred – AI Job Assistant (RAG)</a></li>
+  <li><a href="#fraud-isolation-case-study" id="toc-fraud-isolation-case-study" class="nav-link" data-scroll-target="#fraud-isolation-case-study">Fraud Isolation Case Study</a></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
-  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link" data-scroll-target="#featured-projects">Featured Projects</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -144,35 +377,77 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="data-engineer-data-scientist" class="level2">
-<h2 class="anchored" data-anchor-id="data-engineer-data-scientist">Data Engineer | Data Scientist</h2>
+<section id="ai-solutions-engineer-cloud-data-systems" class="level2">
+<h2 class="anchored" data-anchor-id="ai-solutions-engineer-cloud-data-systems">AI Solutions Engineer | Cloud &amp; Data Systems</h2>
 <p>I am a data professional with a strong foundation in data engineering, analytics, and machine learning. I recently completed a <strong>Master of Science in Data Science</strong>, where I worked extensively with real-world datasets, statistical modeling, and end-to-end data workflows.</p>
-<p>I have hands-on experience using <strong>Python, SQL, and R</strong> to build data pipelines, perform feature engineering, and develop machine learning models. My work spans academic projects and personal builds, with a focus on reproducibility, clear evaluation, and practical decision-making.</p>
-<p>I am currently seeking a <strong>junior data engineering or data-focused role</strong> where I can continue developing scalable data systems while contributing meaningfully to a team.</p>
+<p>Learn more about me through the links below, and explore my projects and certifications for examples of my work and technical expertise.</p>
 <hr>
+</section>
+<section id="featured-projects" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
+<p>A selection of projects that demonstrate my experience in data engineering, analytics, machine learning, and AI-powered systems.</p>
+<section id="agent0-rag-grounded-analytics-agent" class="level3">
+<h3 class="anchored" data-anchor-id="agent0-rag-grounded-analytics-agent">Agent0 – RAG-Grounded Analytics Agent</h3>
+<p><strong>Agent0</strong> is a retrieval-augmented analytics agent that converts natural language questions into safe, explainable SQL insights.</p>
+<p>The system combines a star-schema analytics warehouse with business-rule and metadata retrieval (RAG) to ensure that generated queries are grounded in approved definitions before execution. Agent0 uses an agentic workflow to decide when to retrieve context, execute SQL, or perform post-processing in Python.</p>
+<p><strong>Key ideas behind Agent0:</strong></p>
+<ul>
+<li>Semantic grounding via RAG to reduce SQL hallucinations<br>
+</li>
+<li>Clear separation of reasoning, retrieval, and execution<br>
+</li>
+<li>OLAP-first design with a migration path to Postgres or cloud warehouses<br>
+</li>
+<li>Guardrails and auditability beyond prompt-only approaches</li>
+</ul>
+<p><strong>Tech stack:</strong> DuckDB (prototype OLAP) → Postgres/Redshift-style warehouse, FAISS (vector retrieval), LangChain (agent orchestration), Python (analytics + SQL), LLM-agnostic (currently using GPT-4o via OpenAI API).</p>
+<ul>
+<li><strong>Repo:</strong> <a href="https://github.com/DW8888/agent0" class="uri">https://github.com/DW8888/agent0</a><br>
+</li>
+<li><strong>Architecture &amp; design:</strong> <a href="docs/agent0.html">Agent0 details</a></li>
+</ul>
+<hr>
+</section>
+<section id="alfred-ai-job-assistant-rag" class="level3">
+<h3 class="anchored" data-anchor-id="alfred-ai-job-assistant-rag">Alfred – AI Job Assistant (RAG)</h3>
+<p>Alfred originated as both a practical solution to streamline my job search and as a Master’s capstone project. It is a RAG-powered job application assistant that generates tailored resumes and cover letters based on user profiles and job descriptions.</p>
+<p><strong>Key ideas behind Alfred:</strong></p>
+<ul>
+<li>Uses vector databases and cosine similarity to retrieve relevant profile and job information<br>
+</li>
+<li>Leverages LLMs to generate customized application materials<br>
+</li>
+<li>Built with FastAPI and PostgreSQL/pgvector for efficient retrieval<br>
+</li>
+<li>Includes a React/Next.js frontend with a FastAPI backend for end-to-end user interaction</li>
+</ul>
+<p><strong>Tech stack:</strong> FastAPI, PostgreSQL/pgvector, Python, Next.js/React (TypeScript), OpenAI-powered RAG workflows.</p>
+<ul>
+<li><p><strong>Repo:</strong> <a href="https://github.com/DW8888/alfred" class="uri">https://github.com/DW8888/alfred</a></p></li>
+<li><p><strong>Design:</strong> <a href="alfred_flow.html">Alfred flow</a></p></li>
+</ul>
+<hr>
+</section>
+<section id="fraud-isolation-case-study" class="level3">
+<h3 class="anchored" data-anchor-id="fraud-isolation-case-study">Fraud Isolation Case Study</h3>
+<p>This project was developed as part of a case study in my data science program, where I built an Isolation Forest model to detect fraudulent financial transactions.</p>
+<p>The notebook includes data preprocessing, exploratory data analysis, feature engineering, model training, and evaluation — demonstrating my ability to apply machine learning techniques to real-world problems.</p>
+<p><strong>Tech stack:</strong> Python, Jupyter Notebook, scikit-learn, pandas, matplotlib, seaborn.</p>
+<p><strong>Notebook:</strong> - <a href="https://github.com/DW8888/Data602/blob/main/Bank%20Transaction%20Fraud/isolationf_anomoly_detection.ipynb">Fraud Isolation Case Study</a></p>
+<hr>
+</section>
 <section id="links" class="level3">
 <h3 class="anchored" data-anchor-id="links">Links</h3>
 <ul>
+<li><strong>About:</strong> <a href="./about.html">About me</a></li>
 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/darwhin-gomez" class="uri">https://www.linkedin.com/in/darwhin-gomez</a><br>
 </li>
 <li><strong>GitHub:</strong> <a href="https://github.com/dw8888" class="uri">https://github.com/dw8888</a><br>
 </li>
 <li><strong>Resume:</strong> <a href="./resume.html">Resume</a></li>
+<li><strong>Certifications:</strong> <a href="./certifications.html">Certifications</a></li>
 </ul>
 <hr>
-</section>
-<section id="featured-projects" class="level3">
-<h3 class="anchored" data-anchor-id="featured-projects">Featured Projects</h3>
-<p>A selection of projects demonstrating data pipelines, modeling, and applied analytics.<br>
-(See the <strong>Projects</strong> tab for full details.)</p>
-<ul>
-<li><p><strong>Fraud Detection Pipeline</strong><br>
-Imbalanced classification workflow with feature engineering, model training, and precision-focused evaluation.</p></li>
-<li><p><strong>Alfred – AI Job Assistant (RAG)</strong><br>
-FastAPI-based system using PostgreSQL/pgvector and LLMs to generate tailored resumes and cover letters.</p></li>
-<li><p><strong>Bank Marketing Model Experiments</strong><br>
-Comparative modeling using Decision Trees, Random Forests, AdaBoost, and SVMs with rigorous evaluation metrics.</p></li>
-</ul>
 
 
 </section>
@@ -181,6 +456,19 @@ Comparative modeling using Decision Trees, Random Forests, AdaBoost, and SVMs wi
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

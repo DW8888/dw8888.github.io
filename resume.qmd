@@ -1,8 +1,13 @@
 ---
-title: "Resume"
+title: "Darwhin Gomez"
 ---
 
-## **Darwhin Gomez**  
+<a class="btn btn-primary" href="javascript:window.print()">Print / Save as PDF</a>
+
+<br><br>
+
+
+ 
 **Data Engineer | Data Scientist**  
 New York, NY  
 

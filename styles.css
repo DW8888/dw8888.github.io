@@ -1,1 +1,62 @@
 /* css styles */
+@media print {
+  a.btn { display: none !important; }
+}
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.cert-card {
+  min-width: 280px;
+  max-width: 280px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cert-card img {
+  width: 90px;
+  margin-bottom: 0.75rem;
+}
+
+.cert-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.cert-card .issuer {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card .blurb {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}

@@ -4,19 +4,51 @@ project:
 
 website:
   title: "dw8888.github.io"
-  navbar:
-    left:
+
+  sidebar:
+    style: docked
+    logo: assets/DGlogo.png
+    contents:
       - href: index.qmd
         text: Home
-      - about.qmd
+        icon: house
+
+      - href: about.qmd
+        text: About
+        icon: person
+      
+      - href: resume.qmd
+        text: Resume
+        icon: file
+
+      - href: certifications.qmd
+        text: Certifications
+        icon: award
+
+      - href: https://www.linkedin.com/in/darwhin-gomez/
+        text: LinkedIn
+        icon: linkedin
+
+      - href: https://github.com/DW8888
+        text: GitHub
+        icon: github
+
+      - href: https://rpubs.com/Darwhin88
+        text: RPubs
+        icon: r
+
+      - href: mailto:darwhin88@gmail.com
+        text: Contact
+        icon: envelope
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: lux
+      dark: slate
+    favicon: assets/DGlogo.png
+    highlight-style: github
     css: styles.css
     toc: true
-
-
-
+    mermaid:
+      theme: neutral

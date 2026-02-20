@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Darwhin Gomez – dw8888.github.io</title>
+<title>Alfred Architecture – dw8888.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,13 +40,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c3f2008c781572912d2344a94200f79e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -68,100 +68,79 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">dw8888.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./resume.html">Resume</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alfred Architecture</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/DGlogo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./assets/DGlogo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="./profile.jpeg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./profile.jpeg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
-</i> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
-</i> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./resume.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-file" role="img">
-</i> 
- <span class="menu-text">Resume</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./certifications.html" class="sidebar-item-text sidebar-link"><i class="bi bi-award" role="img">
-</i> 
- <span class="menu-text">Certifications</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://www.linkedin.com/in/darwhin-gomez/" class="sidebar-item-text sidebar-link"><i class="bi bi-linkedin" role="img">
-</i> 
- <span class="menu-text">LinkedIn</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://github.com/DW8888" class="sidebar-item-text sidebar-link"><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text">GitHub</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://rpubs.com/Darwhin88" class="sidebar-item-text sidebar-link"><i class="bi bi-r" role="img">
-</i> 
- <span class="menu-text">RPubs</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="mailto:darwhin88@gmail.com" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope" role="img">
-</i> 
- <span class="menu-text">Contact</span></a>
   </div>
 </li>
     </ul>
@@ -174,12 +153,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><strong>SUMMARY</strong></a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education"><strong>EDUCATION</strong></a></li>
-  <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications"><strong>CERTIFICATIONS</strong></a></li>
-  <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience"><strong>PROFESSIONAL EXPERIENCE</strong></a></li>
-  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects"><strong>PROJECTS</strong></a></li>
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills"><strong>TECHNICAL SKILLS</strong></a></li>
+  <li><a href="#system-architecture" id="toc-system-architecture" class="nav-link active" data-scroll-target="#system-architecture">System Architecture</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Darwhin Gomez</h1>
+<h1 class="title">Alfred Architecture</h1>
 </div>
 
 
@@ -205,119 +179,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a class="btn btn-primary" href="javascript:window.print()">Print / Save as PDF</a></p>
-<p><br><br></p>
-<p><strong>Data Engineer | Data Scientist</strong><br>
-New York, NY</p>
-<p>📧 darwhin88@gmail.com<br>
-🔗 <a href="https://linkedin.com/in/darwhin-gomez" class="uri">https://linkedin.com/in/darwhin-gomez</a><br>
-💻 <a href="https://github.com/dw8888" class="uri">https://github.com/dw8888</a></p>
-<hr>
-<section id="summary" class="level3">
-<h3 class="anchored" data-anchor-id="summary"><strong>SUMMARY</strong></h3>
-<p>Data engineer and data scientist with a <strong>Master of Science in Data Science and Machine Learning (GPA 4.0)</strong> and hands-on experience designing data pipelines, analytics workflows, and ML-enabled systems. Former <strong>AWS Solutions Architect Intern</strong>, where I built scalable, cloud-based analytics and NLP pipelines processing <strong>millions of records</strong>. Strong foundation in Python, SQL, cloud services, and applied machine learning, with a focus on reproducibility, evaluation, and real-world decision-making. Seeking a junior role to contribute to production data systems while continuing to grow as an engineer.</p>
-<hr>
-</section>
-<section id="education" class="level3">
-<h3 class="anchored" data-anchor-id="education"><strong>EDUCATION</strong></h3>
-<p><strong>City University of New York – School of Professional Studies</strong><br>
-Master of Science, Data Science and Machine Learning — <em>Jan 2026</em><br>
-GPA: 4.0</p>
-<p><strong>City University of New York – New York City College of Technology</strong><br>
-Bachelor of Technology, Computer Information Systems — <em>Jun 2024</em><br>
-GPA: 3.78 | Dean’s List (5×) | National Honor Society</p>
-<hr>
-</section>
-<section id="certifications" class="level3">
-<h3 class="anchored" data-anchor-id="certifications"><strong>CERTIFICATIONS</strong></h3>
-<ul>
-<li>AWS Certified Solutions Architect – Associate<br>
-</li>
-<li>AWS Certified AI Practitioner – Generative AI<br>
-</li>
-<li>Google Cybersecurity Certificate<br>
-</li>
-<li>Google IT Support</li>
-</ul>
-<hr>
-</section>
-<section id="professional-experience" class="level3">
-<h3 class="anchored" data-anchor-id="professional-experience"><strong>PROFESSIONAL EXPERIENCE</strong></h3>
-<section id="solutions-architect-intern-amazon-web-services-aws" class="level4">
-<h4 class="anchored" data-anchor-id="solutions-architect-intern-amazon-web-services-aws"><strong>Solutions Architect Intern</strong> — <em>Amazon Web Services (AWS)</em></h4>
-<p>Arlington, VA | Jun 2025 – Sep 2025</p>
-<ul>
-<li>Designed and evaluated <strong>secure, scalable AWS architectures</strong>, analyzing trade-offs across cost, performance, and operational complexity.<br>
-</li>
-<li>Built end-to-end <strong>data analytics pipelines</strong> using <strong>Athena, Glue, SQL, and serverless components</strong>.<br>
-</li>
-<li>Developed a fully automated <strong>sentiment analysis pipeline</strong> processing <strong>millions of text records</strong>, reducing feedback-to-action latency by approximately <strong>5×</strong> while maintaining full traceability.<br>
-</li>
-<li>Automated a previously <strong>100% manual QA workflow</strong>, enabling analysts to focus on interpretation rather than processing.<br>
-</li>
-<li>Applied <strong>NLP techniques</strong> and prompt-design strategies using foundation models via <strong>Amazon Bedrock</strong>.<br>
-</li>
-<li>Designed and deployed <strong>Amazon QuickSight dashboards</strong> to monitor sentiment trends and validate insights.<br>
-</li>
-<li>Presented architectural designs and cost analyses to technical and non-technical stakeholders.</li>
-</ul>
-<hr>
-</section>
-<section id="software-developer-intern-woplli-technologies" class="level4">
-<h4 class="anchored" data-anchor-id="software-developer-intern-woplli-technologies"><strong>Software Developer Intern</strong> — <em>WOPLLI Technologies</em></h4>
-<p>Remote, NY | Jun 2024 – Sep 2024</p>
-<ul>
-<li>Designed system and data-flow architecture diagrams aligned with <strong>data governance and security requirements</strong>.<br>
-</li>
-<li>Integrated and tested APIs supporting decentralized identity workflows on the Ethereum network.<br>
-</li>
-<li>Evaluated system behavior and edge cases to ensure correctness and reliability.</li>
-</ul>
-<hr>
-</section>
-<section id="it-instructor-assistant-rf-cuny-generation-usa-choose-u" class="level4">
-<h4 class="anchored" data-anchor-id="it-instructor-assistant-rf-cuny-generation-usa-choose-u"><strong>IT Instructor Assistant</strong> — <em>RF CUNY &amp; Generation USA (Choose-U)</em></h4>
-<p>Remote, NY | Feb 2022 – Aug 2023</p>
-<ul>
-<li>Delivered <strong>36 instructional sessions</strong> covering IT support, Linux, PowerShell, and scripting to <strong>200+ learners</strong>.<br>
-</li>
-<li>Tracked learner engagement using <strong>Excel and Google Sheets</strong>, producing summary statistics and progress reports.<br>
-</li>
-<li>Used performance data to refine instruction, contributing to a <strong>96% cohort graduation rate</strong>.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="projects" class="level3">
-<h3 class="anchored" data-anchor-id="projects"><strong>PROJECTS</strong></h3>
-<section id="alfred-agentic-job-search-assistant-sep-2025-present" class="level4">
-<h4 class="anchored" data-anchor-id="alfred-agentic-job-search-assistant-sep-2025-present"><strong>Alfred — Agentic Job Search Assistant</strong> | <em>Sep 2025 – Present</em></h4>
-<ul>
-<li>Built a personal <strong>agentic job search assistant</strong> using <strong>FastAPI (Python)</strong> and OpenAI GPT models.<br>
-</li>
-<li>Implemented a <strong>Retrieval-Augmented Generation (RAG)</strong> system using <strong>PostgreSQL with pgvector</strong>.<br>
-</li>
-<li>Applied <strong>cosine similarity</strong> to match candidates to job postings, reducing application time by <strong>~60%</strong>.<br>
-</li>
-<li>Conducted <strong>LLM evaluation</strong> using human-in-the-loop and LLM-as-judge techniques.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="technical-skills" class="level3">
-<h3 class="anchored" data-anchor-id="technical-skills"><strong>TECHNICAL SKILLS</strong></h3>
-<p><strong>Languages &amp; Programming</strong><br>
-Python (pandas, scikit-learn, PyTorch), R, SQL</p>
-<p><strong>Data &amp; Analytics Tools</strong><br>
-Excel, PowerPoint, Google Sheets, Tableau, Power BI</p>
-<p><strong>Cloud &amp; Data Platforms</strong><br>
-AWS (Athena, Glue, Bedrock, QuickSight), <strong>Databricks (familiarity)</strong></p>
-<p><strong>AI / ML Platforms</strong><br>
-OpenAI, Claude, Llama, Google GenAI</p>
-<p><strong>Techniques &amp; Methods</strong><br>
-ETL, NLP, Classification, Regression, Ensemble Methods (CART), Forecasting (ARIMA), Anomaly Detection, Hypothesis Testing, EDA, PCA, Clustering</p>
-<p><strong>Development Environments</strong><br>
-Jupyter, Colab, VS Code, Rstudio, Pycharm</p>
+<section id="system-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="system-architecture">System Architecture</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+    subgraph UI["Next.js / React Dashboard"]
+        A[Operator Actions]
+    end
+
+    subgraph API["FastAPI Backend (Python)"]
+        R1[Jobs Router]
+        R2[Artifacts &amp; Profiles]
+        R3[Search + Persona Resumes]
+        R4[GitHub Summaries]
+    end
+
+    subgraph Agents["Background Agents"]
+        AF[Job Fetcher]
+        AM[Job Matcher]
+        AR[Resume Agent]
+        AC[Cover Letter Agent]
+        AG[GitHub Ingestion Agent]
+    end
+
+    subgraph Queues["JSON Queues &amp; State Files"]
+        Q1[job_fetcher_state.json]
+        Q2[state_job_matcher.json]
+        Q3[resume_queue.json]
+        Q4[cover_letter_queue.json]
+        Q5[github_ingestion_state.json]
+    end
+
+    subgraph DB["PostgreSQL + pgvector"]
+        T1[(jobs)]
+        T2[(artifacts)]
+        T3[(generated_artifacts)]
+    end
+
+    subgraph External["External Services"]
+        JAPI[(Job APIs / RSS / Boards)]
+        GH[(GitHub Repos)]
+        LLM[(OpenAI GPT Models)]
+    end
+
+    subgraph Infra["Infrastructure"]
+        DKR[docker-compose Postgres]
+        AWS[AWS scaffolding (future ECS/RDS)]
+    end
+
+    %% UI &lt;-&gt; API (connect to actual nodes, not the subgraph name)
+    A --&gt;|HTTP requests| R1
+    R1 --&gt;|REST/WebSockets| A
+
+    %% API &lt;-&gt; DB
+    R1 --&gt; T1
+    R2 --&gt; T2
+    R3 --&gt; T3
+
+    %% Job ingestion pipeline
+    AF --&gt;|gets jobs| JAPI
+    AF --&gt; Q1
+    Q1 --&gt; AM
+    AM --&gt; Q2
+    AM --&gt;|strong matches| Q3
+    Q3 --&gt; AR
+    AR --&gt; Q4
+    Q4 --&gt; AC
+
+    %% Agents write to DB
+    AF --&gt; T1
+    AM --&gt; T1
+    AR --&gt; T3
+    AC --&gt; T3
+
+    %% GitHub ingestion
+    AG --&gt; GH
+    AG --&gt; Q5
+    Q5 --&gt; R4
+    R4 --&gt; LLM
+
+    %% LLM usage
+    AR --&gt;|prompting| LLM
+    AC --&gt;|prompting| LLM
+    AM --&gt;|LLM skill check| LLM
+
+    %% Infrastructure
+    DKR --&gt; T1
+    DKR --&gt; T2
+    DKR --&gt; T3
+
+    %% Correct dotted-arrow labeling syntax
+    AWS -.-&gt;|future deploy| R1
+    AWS -.-&gt;|future deploy| AF
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
 </section>
