@@ -8,17 +8,18 @@ title: "Darwhin Gomez"
 
 
  
-**Ai and Data Engineer**  
+**AI  Solutions and Data Engineer**  
 New York, NY  
 
-📧 darwhin88@gmail.com  
-🔗 <https://linkedin.com/in/darwhin-gomez>  
-💻 <https://github.com/dw8888>  
+📧 <mailto:darwhin88@gmail.com>🔗 <https://linkedin.com/in/darwhin-gomez>💻 <https://github.com/dw8888>  
+
 
 ---
 
 ### **SUMMARY**
-Data engineer and data scientist with a **Master of Science in Data Science and Machine Learning (GPA 4.0)** and hands-on experience designing data pipelines, analytics workflows, and ML-enabled systems. Former **AWS Solutions Architect Intern**, where I built scalable, cloud-based analytics and NLP pipelines processing **millions of records**. Strong foundation in Python, SQL, cloud services, and applied machine learning, with a focus on reproducibility, evaluation, and real-world decision-making. Seeking a junior role to contribute to production data systems while continuing to grow as an engineer.
+
+Data engineer and data scientist with a **Master of Science in Data Science and Machine Learning** and hands-on experience designing data pipelines, analytics workflows, and ML-enabled systems. Former **AWS Solutions Architect Intern**, where I built scalable, cloud-based analytics and NLP pipelines processing 
+**large batch of records**. Strong foundation in Python, SQL, cloud services, applied machine learning and AI, with a focus on reproducibility, evaluation, and real-world decision-making. Interested in leveraging data, AI  and the cloud to drive insights and automation in dynamic environments.
 
 ---
 
@@ -66,7 +67,7 @@ Remote, NY | Jun 2024 – Sep 2024
 
 ---
 
-#### **IT Instructor Assistant** — *RF CUNY & Generation USA (Choose-U)*  
+#### **IT Instructor Assistant** — *RF CUNY & Generation USA*  
 Remote, NY | Feb 2022 – Aug 2023  
 
 - Delivered **36 instructional sessions** covering IT support, Linux, PowerShell, and scripting to **200+ learners**.  

@@ -1,0 +1,7 @@
+---
+title: "Agent0 Architecture"
+---
+
+## System Architecture
+
+![Architecture Diagram](/assets/agent0_flow1.png)

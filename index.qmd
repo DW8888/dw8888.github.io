@@ -5,6 +5,7 @@ title: "Darwhin Gomez"
 
 ## AI Solutions Engineer | Cloud & Data Systems
 
+![](assets/DGlogo.png){width=35% .mx-auto .d-block}
 
 I am a data professional with a strong foundation in data engineering, analytics, and machine learning. I recently completed a **Master of Science in Data Science**, where I worked extensively with real-world datasets, statistical modeling, and end-to-end data workflows.
 
@@ -35,7 +36,7 @@ The system combines a star-schema analytics warehouse with business-rule and met
 **Tech stack:** DuckDB (prototype OLAP) → Postgres/Redshift-style warehouse, FAISS (vector retrieval), LangChain (agent orchestration), Python (analytics + SQL), LLM-agnostic (currently using GPT-4o via OpenAI API).
 
 - **Repo:** <https://github.com/DW8888/agent0>  
-- **Architecture & design:** [Agent0 details](docs/agent0.html)
+- **Architecture & design:** [Agent0 details](agent0_flow.html)
 
 ---
 
@@ -54,7 +55,7 @@ Alfred originated as both a practical solution to streamline my job search and a
 
 - **Repo:** <https://github.com/DW8888/alfred>
 
-- **Design:** [Alfred flow](alfred_flow.html)
+- **Architecture & design:**  [Alfred design](alfred_flow.html)
 
 ---
 
