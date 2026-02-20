@@ -8,7 +8,7 @@ title: "Darwhin Gomez"
 
 
  
-**Data Engineer | Data Scientist**  
+**Ai and Data Engineer**  
 New York, NY  
 
 📧 darwhin88@gmail.com  
@@ -49,7 +49,7 @@ Arlington, VA | Jun 2025 – Sep 2025
 
 - Designed and evaluated **secure, scalable AWS architectures**, analyzing trade-offs across cost, performance, and operational complexity.  
 - Built end-to-end **data analytics pipelines** using **Athena, Glue, SQL, and serverless components**.  
-- Developed a fully automated **sentiment analysis pipeline** processing **millions of text records**, reducing feedback-to-action latency by approximately **5×** while maintaining full traceability.  
+- Developed a fully automated **sentiment analysis pipeline** processing batches of text records, reducing feedback-to-action latency by approximately **5×** while maintaining full traceability.  
 - Automated a previously **100% manual QA workflow**, enabling analysts to focus on interpretation rather than processing.  
 - Applied **NLP techniques** and prompt-design strategies using foundation models via **Amazon Bedrock**.  
 - Designed and deployed **Amazon QuickSight dashboards** to monitor sentiment trends and validate insights.  
@@ -82,7 +82,15 @@ Remote, NY | Feb 2022 – Aug 2023
 - Built a personal **agentic job search assistant** using **FastAPI (Python)** and OpenAI GPT models.  
 - Implemented a **Retrieval-Augmented Generation (RAG)** system using **PostgreSQL with pgvector**.  
 - Applied **cosine similarity** to match candidates to job postings, reducing application time by **~60%**.  
-- Conducted **LLM evaluation** using human-in-the-loop and LLM-as-judge techniques.  
+- Conducted **LLM evaluation** using human-in-the-loop and LLM-as-judge techniques.
+
+#### **Agent0 — RAG-Grounded Analytics Agent** | *Jan 2026 – Present*
+
+- Developed a **retrieval-augmented analytics agent** that converts natural language questions into **safe, explainable SQL insights**.  
+- Combined a **star-schema analytics warehouse** with **business-rule and metadata retrieval (RAG)** to ensure queries are grounded in approved definitions before execution.  
+- Leveraged **LangChain** for ReAct agent orchestration, **FAISS** for vector retrieval, and an **OLAP-first architecture** with a migration path to **Postgres**.  
+- Wrapped the system in **Streamlit** for interactive user input and real-time response display.  
+- Added **Python-based post-processing** for query result analysis, including **visualizations and summary statistics**.
 
 ---
 
@@ -95,10 +103,10 @@ Python (pandas, scikit-learn, PyTorch), R, SQL
 Excel, PowerPoint, Google Sheets, Tableau, Power BI  
 
 **Cloud & Data Platforms**  
-AWS (Athena, Glue, Bedrock, QuickSight), **Databricks (familiarity)**  
+AWS (Athena, Glue, Bedrock, QuickSight), **Databricks (familiarity)**, Google Cloud Platform (familiarity), and Microsoft Azure (familiarity)  
 
 **AI / ML Platforms**  
-OpenAI, Claude, Llama, Google GenAI  
+OpenAI, Claude, Llama, Google GenAI, Hugging Face, LangChain  
 
 **Techniques & Methods**  
 ETL, NLP, Classification, Regression, Ensemble Methods (CART), Forecasting (ARIMA), Anomaly Detection, Hypothesis Testing, EDA, PCA, Clustering  
