@@ -37,13 +37,21 @@ GPA: 3.78 | Dean’s List (5×) | National Honor Society
 
 ### **CERTIFICATIONS**
 - AWS Certified Solutions Architect – Associate  
-- AWS Certified AI Practitioner – Generative AI  
+- AWS Certified AI Practitioner – Generative AI
+- AWS Machine Learning Engineer - Associate
+- AWS Data Engineer - Associate  
 - Google Cybersecurity Certificate  
 - Google IT Support  
 
 ---
 
 ### **PROFESSIONAL EXPERIENCE**
+#### **Solutions Architect Associate** — *Amazon Web Services (AWS)*  
+Arlington, VA | May 2026 
+
+
+
+---
 
 #### **Solutions Architect Intern** — *Amazon Web Services (AWS)*  
 Arlington, VA | Jun 2025 – Sep 2025  
