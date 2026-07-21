@@ -6,6 +6,8 @@ title: "Certifications"
 - [AWS Certified AI Practitioner](cert_images/AWS_AI_P.pdf)
 - [AWS Certified Solutions Architect – Associate](cert_images/AWS_ASA.pdf)
 - [AWS Certified Cloud Practitioner](cert_images/AWS_CP.pdf)
+- [AWS Certified Data Engineer – Associate](cert_images/AWS%20Certified%20Data%20Engineer%20-%20Associate%20certificate.pdf)
+- [AWS Certified Machine Learning Engineer – Associate](cert_images/AWS%20Certified%20Machine%20Learning%20Engineer%20-%20Associate%20certificate.pdf)
 - [DataCamp AI Fundamentals](cert_images/DataCamp_AI_Fundamentals.pdf)
 - [Google Cybersecurity](cert_images/GoggleCyberSecurity.pdf)
 - [Google IT Support](cert_images/GoogleITSupportCertificate.pdf)
